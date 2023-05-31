@@ -11,9 +11,11 @@ export const Container = styled.div`
         justify-content: center;
         
         .logo {
+            left: 10px
+            top: 10px
             widt: 300px;
             padding: 25px 5px 25px 25px;
-            cursor: pointer;
+            cursor: center;
         }
     }
 `;
