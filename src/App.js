@@ -1,22 +1,20 @@
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Inicio from './assets/pages/Inicio'
+import SobreCpus from './assets/pages/SobreCpus'
+import SobreNos from './assets/pages/SobreNos'
+import Navbar from './assets/components/navbar'
 
 function App() {
     return(
     <Router>
-      <ul>
-        <li>
-          <Link to="/">Inicio</Link>
-        </li>
-        <li>
-          <Link to="/">Sobre nós</Link>
-        </li>
-        <li>
-          <Link to="/">Sobre CPUS</Link>
-        </li>
-      </ul>
+      <Navbar />
+      <Routes>
+        <Route exact path="/inicio" element={<Inicio/>}/>
+        <Route exact path="/sobrenos" element={<SobreNos/>}/>
+        <Route exact path="/sobrecpus" element={<SobreCpus/>}/>
+      </Routes>
     </Router>
     )
-
   }
 
-export default App;
+export default App
