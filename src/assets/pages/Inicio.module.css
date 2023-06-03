@@ -1,0 +1,48 @@
+.inicio_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+}
+
+.inicio_container h1 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.inicio_container h1 span {
+    color: #ffffff;
+    background-color: rgb(68, 3, 3);
+    padding: 0.2em;
+}
+
+.inner {
+    display: flex;
+}
+
+.item {
+    min-height: 200px;
+    min-width: 400px;
+    padding: 14px;
+}
+
+.item img {
+    width: 100%;
+    height: 90%;
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+.carrosel {
+    max-width: 1000px;
+    cursor: grab;
+    overflow: hidden;
+}
+
+p {
+    padding: 10px;
+}
+
+
