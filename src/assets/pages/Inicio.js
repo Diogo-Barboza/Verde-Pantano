@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react'
 
 import styles from './Inicio.module.css'
@@ -9,6 +10,7 @@ import image2 from '../img/foto-carrosel-2.jpg'
 import image3 from '../img/foto-carrosel-3.jpg'
 import image4 from '../img/foto-carrosel-4.jpg'
 import image5 from '../img/foto-carrosel-5.jpg'
+import LinkButtom from '../components/LinkButtom'
 
 const images = [image1, image2, image3, image4, image5]
 
@@ -37,7 +39,7 @@ function Inicio(){
 
                 </motion.div>
             </motion.div>
-            <a href='/start'>Start</a>
+            <LinkButtom to="/start" text="COMEÇAR"/>
         </section>
     )
 }
