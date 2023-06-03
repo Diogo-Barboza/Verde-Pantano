@@ -1,8 +1,9 @@
+import styles from './Inicio.module.css'
+
 function Inicio(){
     return (
         <div>
-            <h1>INICIO</h1>
-            <p>Conteúdo da página</p>
+            <h1>INÍCIO</h1>
         </div>
     )
 }
