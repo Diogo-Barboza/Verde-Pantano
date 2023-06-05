@@ -9,7 +9,7 @@ import Start from './assets/pages/Start'
 function App() {
     return(
     <Router>
-      <Navbar />
+      <Navbar customClass="min-height"/>
         <Container customClass="min-height">
           <Routes>
               <Route exact path="/inicio" element={<Inicio/>}/>

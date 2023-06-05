@@ -1,9 +1,9 @@
-import styles from './Start.modules.css'
+import styles from './Start.module.css'
 
 function Start(){
     return(
-        <div>        
-            <h1>START</h1>
+        <div className={styles.container}>        
+            <h1>Selecione o seu <span>jogo:</span></h1>
         </div>
 
     )
