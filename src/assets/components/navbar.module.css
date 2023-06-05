@@ -1,7 +1,8 @@
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: rgb(68, 3, 3);
+    width: auto;
 }
 
 .list {
@@ -13,7 +14,7 @@
 
 .item{
     margin-right: 2.5em;
-    font-size: 35px;
+    font-size: 2.5em;
 }
 
 .item a {
@@ -27,6 +28,6 @@
 
 .logo {
     margin-left: 0px;
-    margin-right: 150px;
-    width: 150px;
+    margin-right: 6rem;
+    width: 50%;
 }

@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react';
 
-import styles from './Inicio.module.css'
+import styles from './Inicio.module.css';
 
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion';
 
 import image1 from '../img/foto-carrosel-1.jpg'
 import image2 from '../img/foto-carrosel-2.jpg'
