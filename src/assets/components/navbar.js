@@ -7,7 +7,7 @@ function Navbar(){
     return(
         <nav className={styles.navbar}>
           <Container>
-            <Link to='/inicio'><img src={logo} alt='PcWizard' class={styles.logo}/></Link>
+            <Link to='/inicio'><img src={logo} alt='PcWizard' className={styles.logo}/></Link>
             <ul className={styles.list}>
                 <li className={styles.item}>
                     <Link to="/inicio">Início</Link>
