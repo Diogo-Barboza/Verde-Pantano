@@ -29,10 +29,14 @@
 
 }
 
-.pessoas {
-    margin: 3%;
+.pic {
     display: flex;
     width: 150px;
-    border-radius: 10cm;
-    flex-direction: row;
+}
+
+.inner {
+    margin-top: 100%;
+    width: 200px;
+    padding: 1em;
+    margin: 20%;
 }
