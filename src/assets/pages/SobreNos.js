@@ -3,8 +3,9 @@ import styles from './SobreNos.module.css'
 import foto1 from '../img/fotodeperfil.jpg'
 import davi from '../img/Davii.png'
 import diogo from '../img/Diogo.png'
+import rafael from '../img/Rafael.png'
 
-const fotos = [davi, diogo ,foto1, foto1]
+const fotos = [davi, diogo , rafael, foto1]
 
 function SobreNos() {
     return(
