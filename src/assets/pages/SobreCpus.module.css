@@ -1,10 +1,61 @@
 .container{
     width: 100%;
-    margin-top: 30%;
+    margin-top: 3%;
+    text-align: center;
+    justify-content: center;
 }
 
 .container h1{
+    color: #2e2e2e;
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+
+.container span {
     background-color: rgb(68, 3, 3);
     color: #FFF;
     padding: 0.5em;
+    border-radius: 0.3em;
+}
+
+.container h2 {
+    width: 100%;
+    margin-top: 3%;
+
+}
+
+.container p {
+    margin-top: 1%;
+    color: #2e2e2e;
+    font-size: 110%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: justify;
+}
+
+.container img {
+    width: 70%;
+    margin-bottom: 5%;
+}
+
+.caixas {
+    margin-top: 3%;
+    color: #FFF;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.caixasitems {
+    background-color: rgb(68, 3, 3);
+    border-radius: 1em;
+    margin: 1%;
+    
+}
+
+.caixas p {
+    color: #c7c7c7;
+    text-align: justify;
+    margin: 5%;
 }
