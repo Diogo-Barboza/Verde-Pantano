@@ -51,7 +51,7 @@
     background-color: rgb(68, 3, 3);
     border-radius: 1em;
     margin: 1%;
-    
+    min-width: 490px;
 }
 
 .caixas p {
