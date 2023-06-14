@@ -23,7 +23,7 @@ function SobreCpus(){
                     <img src={memoriaramfoto} alt='Foto Memória RAM'/>
                 </div>
             </div>
-            <div className={styles.caixas}>
+            <div className={styles.caixasbaixo}>
                 <div className={styles.caixasitems}>
                     <h2>Placa de Vídeo</h2>
                     <p>A placa de vídeo é um componente do computador que melhora a qualidade das imagens exibidas no monitor. Ela é responsável por processar gráficos complexos em jogos, vídeos e outros aplicativos visuais. A placa de vídeo ajuda a tornar as imagens mais bonitas, fluidas e realistas, proporcionando uma experiência visual incrível. Em resumo, ela é como um "motor gráfico" que transforma dados em imagens incríveis no computador.</p>

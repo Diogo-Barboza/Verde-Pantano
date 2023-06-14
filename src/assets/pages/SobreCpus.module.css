@@ -34,8 +34,11 @@
 }
 
 .container img {
+    border-radius: 0.5em;
     width: 70%;
     margin-bottom: 5%;
+    background-color: rgb(78, 5, 5);
+    padding: 0.5%;
 }
 
 .caixas {
@@ -47,11 +50,25 @@
     
 }
 
+.caixasbaixo {
+    margin-top: 0%;
+    color: #FFF;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.caixasbaixo p {
+    color: #c7c7c7;
+    text-align: justify;
+    margin: 5%;
+}
+
 .caixasitems {
     background-color: rgb(68, 3, 3);
-    border-radius: 1em;
+    border-radius: 3%;
     margin: 1%;
-    min-width: 490px;
 }
 
 .caixas p {
