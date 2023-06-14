@@ -2,7 +2,7 @@ import styles from './SobreCpus.module.css'
 
 import processadorfoto from '../img/processador-site.jpg'
 import memoriaramfoto from '../img/memoriaram-site.jpg'
-import placadevideofoto from '../img/placadevideo-site-2-grande.png'
+import placadevideofoto from '../img/placadevideopronta.jpg'
 import armazenamentofoto from '../img/armazenamento-site-2.jpg'
 
 function SobreCpus(){
