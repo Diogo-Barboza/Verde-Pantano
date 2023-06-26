@@ -1,3 +1,4 @@
+
 const admin = require('firebase-admin');
 var serviceAccount = require("./pcwizard-bdb56-firebase-adminsdk-d5xm0-4e41fcbb39.json");
 
@@ -7,6 +8,7 @@ databaseURL: 'https://pcwizard-bdb56-default-rtdb.firebaseio.com'
 });
 
 const db = admin.database();
+
 
 // Função para buscar as configurações pelos campos OS_min, OS_rec, cpu_min, cpu_rec, gpu_min, gpu_rec, ram_min, ram_rec
 async function getConfigurationsByGameName(gameName) {

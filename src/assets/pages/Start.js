@@ -1,4 +1,5 @@
 import styles from './Start.module.css'
+import {getConfigurationsByGameName} from '../backend/Procurar'
 
 import LinkButtom from '../components/LinkButtom'
 
