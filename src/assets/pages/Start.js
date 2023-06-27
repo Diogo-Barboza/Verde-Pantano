@@ -58,6 +58,7 @@ function Start() {
           ram_rec: game.ram_rec
         };
         configurations.push(configuration);
+        
       });
 
       setSearchResults(configurations);
@@ -77,7 +78,7 @@ function Start() {
       />
       <button onClick={handleSearch}>Pesquisar</button>
       
-      {/* Exibir os resultados da pesquisa */}
+      {/* Exibir os resultados */}
       {searchResults.map((configuration, index) => (
         <div key={index}>
           <h2>{configuration.gameName}</h2>
