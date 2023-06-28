@@ -5,7 +5,6 @@ import SobreNos from './assets/pages/SobreNos'
 import Navbar from './assets/components/navbar'
 import Container from './assets/components/Container';
 import Start from './assets/pages/Start'
-import CpuMontada from './assets/pages/CpuMontada';
 
 function App() {
     return(
@@ -17,7 +16,6 @@ function App() {
               <Route exact path="/sobrenos" element={<SobreNos/>}/>
               <Route exact path="/sobrecpus" element={<SobreCpus/>}/>
               <Route exact path="/start" element={<Start/>}/>
-              <Route exact path="/cpumontada" element={<CpuMontada/>}/>
           </Routes>
         </Container>
     </Router>

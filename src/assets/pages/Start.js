@@ -92,7 +92,6 @@ function Start() {
           <p>RAM recomendada: {configuration.ram_rec}</p>
         </div>
       ))}
-      <LinkButton to="/cpumontada" text="PRÓXIMO" />
     </div>
   );
 }
