@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Start.module.css";
-import LinkButton from "../components/LinkButtom";
+//import LinkButton from "../components/LinkButtom";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/database";
@@ -33,35 +33,39 @@ function Start() {
   const handleSearch = async () => {
     const database = firebase.database();
     const gamesRef = database.ref();
-    const query = gamesRef.orderByChild("name").equalTo(searchTerm);
-
+    const searchTermLower = searchTerm.toLowerCase(); // Converter o termo de pesquisa para minúsculas
+  
     try {
-      const snapshot = await query.once("value");
+      const snapshot = await gamesRef.once("value");
       const games = snapshot.val();
       const configurations = [];
-
+  
       if (!games) {
         console.log("Jogo não encontrado.");
         setSearchResults([]);
         return;
       }
-
+  
       Object.keys(games).forEach((gameKey) => {
         const game = games[gameKey];
-        const configuration = {
-          gameName: game.name,
-          OS_min: game.OS_min,
-          OS_rec: game.OS_rec,
-          cpu_min: game.cpu_min,
-          cpu_rec: game.cpu_rec,
-          gpu_min: game.gpu_min,
-          gpu_rec: game.gpu_rec,
-          ram_min: game.ram_min,
-          ram_rec: game.ram_rec,
-        };
-        configurations.push(configuration);
+        const gameNameLower = game.name.toLowerCase(); // Converter o nome do jogo para minúsculas
+  
+        if (gameNameLower.includes(searchTermLower)) {
+          const configuration = {
+            gameName: game.name,
+            OS_min: game.OS_min,
+            OS_rec: game.OS_rec,
+            cpu_min: game.cpu_min,
+            cpu_rec: game.cpu_rec,
+            gpu_min: game.gpu_min,
+            gpu_rec: game.gpu_rec,
+            ram_min: game.ram_min,
+            ram_rec: game.ram_rec,
+          };
+          configurations.push(configuration);
+        }
       });
-
+  
       setSearchResults(configurations);
     } catch (error) {
       console.error("Erro ao buscar configurações:", error);
