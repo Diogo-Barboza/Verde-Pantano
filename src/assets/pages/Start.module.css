@@ -1,6 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .container {
-    width: 100%;
+  width: 100%;
 }
-.container h1{
-    padding: 40px;
+
+.caixabusca {
+  outline: none;
+  background: none;
+  border: 
+  3px solid rgb(68, 3, 3);
+  padding: 0.5rem 1rem;
+  /* margin-top: 1rem;
+  margin-bottom: 2rem; */
+  width: 300px;
+}
+
+.boxpesquisa {
+  background: rgb(68, 3, 3);
+  border: 2px solid rgb(68, 3, 3);
+  color: #fff;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.bigContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.requisitos {
+  background-color: rgb(98, 30, 30);
+  color: #FFF;
+  padding: 1em;
+  border-radius: 0.3em;
+  width: 20%;
+  height: 30vh;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.titulo{
+  margin-left: 2em;
+}
+
+.fodase {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  margin: 1rem;
+}
+
+.fodase2{
+  margin-left: 1em;
+}
+
+@media screen and  (max-width: 784px) {
+  .fodase{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fodase2{
+    margin-top: 1em;
+  }
 }
