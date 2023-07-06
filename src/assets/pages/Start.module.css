@@ -30,7 +30,6 @@
 }
 
 .requisitos {
-  background-color: rgb(98, 30, 30);
   color: #FFF;
   padding: 1em;
   border-radius: 0.3em;
@@ -38,6 +37,27 @@
   height: 30vh;
   box-shadow: 5px 5px 10px gray;
 }
+
+.memoriaram{
+  background: url("../img/memoria-ram-escura.png");
+  background-size: 100% 100%;
+}
+
+.placadevideo{
+  background: url("../img/placadevideopronta.jpg");
+  background-size: 100% 100%;
+}
+
+.processador{
+  background: url("../img/processador-site.jpg");
+  background-size: 100% 100%;
+}
+
+.os{
+  background: url("../img/tadas-sar-T01GZhBSyMQ-unsplash.jpg.opdownload");
+  background-size: 100% 100%;
+}
+
 
 .titulo{
   margin-left: 2em;

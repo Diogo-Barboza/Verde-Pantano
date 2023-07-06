@@ -110,20 +110,20 @@ function Start() {
             <div className={styles.bigContainer}>
               <br></br>
 
-              <div className={styles.requisitos}>
+              <div className={styles.requisitos + " " + styles.os}>
                 <h4>OS mínimo: {configuration.OS_min}</h4>
               </div>
 
-              <div className={styles.requisitos}>
+              <div className={styles.requisitos + " " + styles.processador}>
                 <h4>CPU mínimo: {configuration.cpu_min}</h4>
               </div>
 
-              <div className={styles.requisitos}>
+              <div className={styles.requisitos + " " + styles.placadevideo}>
                 <h4>GPU mínima: {configuration.gpu_min}</h4>
               </div>
 
-              <div className={styles.requisitos}>
-                <h4>RAM mínima: {configuration.ram_min}</h4>
+              <div className={styles.requisitos + " " + styles.memoriaram}>
+                <h4 className={styles.texto}>RAM mínima: {configuration.ram_min}</h4>
               </div>
               <br></br>
             </div>
@@ -137,19 +137,19 @@ function Start() {
 
               <div className={styles.bigContainer}>
                 <br></br>
-                <div className={styles.requisitos}>
+                <div className={styles.requisitos + " " + styles.os}>
                   <h4>OS recomendado: {configuration.OS_rec}</h4>
                 </div>
 
-                <div className={styles.requisitos}>
+                <div className={styles.requisitos + " " + styles.processador}>
                   <h4>CPU recomendada: {configuration.cpu_rec}</h4>
                 </div>
 
-                <div className={styles.requisitos}>
+                <div className={styles.requisitos + " " + styles.placadevideo}>
                   <h4>GPU recomendada: {configuration.gpu_rec}</h4>
                 </div>
 
-                <div className={styles.requisitos}>
+                <div className={styles.requisitos + " " + styles.memoriaram}>
                   <h4>RAM recomendada: {configuration.ram_rec}</h4>
                 </div>
                 <br></br>
